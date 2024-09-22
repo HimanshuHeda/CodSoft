@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>CALCULATOR</h1>
+        <input style="width: 95%; height: 30px;" type="text" id="display" readonly>
+        <br>
+        <input type="button" class="btn" value="1" onclick="addToDisplay('1')">
+        <input type="button" class="btn" value="2" onclick="addToDisplay('2')">
+        <input type="button" class="btn" value="3" onclick="addToDisplay('3')">
+        <input type="button" class="button_op" value="+" onclick="addToDisplay('+')">
+        <br>
+        <input type="button" class="btn" value="4" onclick="addToDisplay('4')">
+        <input type="button" class="btn" value="5" onclick="addToDisplay('5')">
+        <input type="button" class="btn" value="6" onclick="addToDisplay('6')">
+        <input type="button" class="button_op" value="-" onclick="addToDisplay('-')">
+        <br>
+        <input type="button" class="btn" value="7" onclick="addToDisplay('7')">
+        <input type="button" class="btn" value="8" onclick="addToDisplay('8')">
+        <input type="button" class="btn" value="9" onclick="addToDisplay('9')">
+        <input type="button" class="button_op" value="*" onclick="addToDisplay('*')">
+        <br>
+        <input type="button" class="button_operation" value="C" onclick="clearDisplay()">
+        <input type="button" class="btn" value="0" onclick="addToDisplay('0')">
+        <input type="button" class="button_operation" value="=" onclick="calculate()">
+        <input type="button" class="button_op" value="/" onclick="addToDisplay('/')">
+    </div>
+    <script>
+        function addToDisplay(value) {
+            document.getElementById('display').value += value;
+        }
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+        function calculate() {
+            try {
+                const result = eval(document.getElementById('display').value);
+                document.getElementById('display').value = result;
+            } catch (error) {
+                document.getElementById('display').value = 'Error';
+            }
+        }
+    </script>
+</body>
+
+</html>
