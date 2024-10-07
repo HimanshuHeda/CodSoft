@@ -1,0 +1,184 @@
+/* Basic styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #66c385;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 0;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+/* Main section styling */
+.main {
+    position: relative;
+    text-align: center;
+}
+
+.main h1 {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 2.5em;
+    line-height: 1.2em;
+}
+
+.main h1 span {
+    color: red;
+}
+
+.main img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-content p {
+    flex: 1 100%;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+/* For devices with width smaller than 900px */
+@media screen and (max-width: 900px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    header {
+        background-color: #333;
+    }
+
+    li a {
+        color: white;
+    }
+
+    .main h1 {
+        font-size: 2em;
+        padding-left: 10px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
+/* For devices with width smaller than 600px */
+@media screen and (max-width: 600px) {
+    .main h1 {
+        font-size: 1.8em;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+    li a {
+        font-size: 1.2em;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links li {
+        margin: 10px 0;
+    }
+
+    .footer-content p {
+        margin-top: 20px;
+    }
+}
+
+/* For very small screens (width smaller than 400px) */
+@media screen and (max-width: 400px) {
+    .main h1 {
+        font-size: 1.5em;
+        padding-left: 5px;
+    }
+
+    ul {
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    li a {
+        font-size: 1em;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-content p {
+        font-size: 0.9em;
+    }
+}

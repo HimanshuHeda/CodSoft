@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+header {
+    background-color: #66c385;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+h1 span {
+    color: red;
+}
+
+.main img {
+    width: 85vh;
+}
+
+img {
+    width: 28%;
+    padding: 0px 33px 0px;
+}
+
+.main h1 {
+    position: absolute;
+    top: 15%;
+    left: 63%;
+}
+
+.container {
+    position: absolute;
+    top: 25%;
+    left: 63%;
+}
+
+.contact-form form button {
+    height: 40px;
+    width: 90px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    background: none;
+    color: black;
+}
+
+.contact-info,
+.contact-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 83%;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-info p,
+.contact-info ul {
+    color: #333;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #0073b1;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #0073b1;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 22px 248px;
+    background-color: #0073b1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact-form button:hover {
+    background-color: #005f8f;
+    height: 72px;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-content p {
+    flex: 1 100%;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+/* Adjust layout for tablets */
+@media (max-width: 900px) {
+    .main h1 {
+        font-size: 2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Adjust layout for mobile devices */
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .main img {
+        width: 100%;
+    }
+
+    .main h1 {
+        font-size: 1.5em;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra small devices (max-width: 400px) */
+@media (max-width: 400px) {
+    ul {
+        padding: 10px;
+    }
+
+    .main h1 {
+        font-size: 1.2em;
+        top: 5%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+}

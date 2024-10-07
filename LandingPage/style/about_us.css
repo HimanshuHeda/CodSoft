@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #66c385;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+h1 span {
+    color: red;
+}
+
+.about p {
+    position: absolute;
+    text-align: left;
+    width: 36%;
+    font-size: 18px;
+}
+
+.about {
+    background-color: #65e0b133;
+}
+
+.about img {
+    width: 120vh;
+}
+
+.about h1 {
+    position: absolute;
+    top: 12%;
+    left: 63%;
+}
+
+.about h3 {
+    position: absolute;
+    top: 20%;
+    left: 63%;
+}
+
+.about p {
+    top: 24%;
+    left: 63%;
+}
+
+.about h1 span {
+    color: rgb(163, 6, 6);
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-content p {
+    flex: 1 100%;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+/* For screens smaller than 900px */
+@media (max-width: 900px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about h1, .about h3, .about p {
+        width: 100%;
+    }
+
+    .about h1 {
+        font-size: 2em;
+    }
+
+    .about p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .about h1 {
+        font-size: 1.8em;
+    }
+
+    .about p {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links li {
+        margin: 10px 0;
+    }
+
+    .footer-content p {
+        margin-top: 20px;
+    }
+}
+
+/* For very small screens (below 400px) */
+@media (max-width: 400px) {
+    ul {
+        padding: 10px;
+    }
+
+    .about h1 {
+        font-size: 1.5em;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-content p {
+        font-size: 0.9em;
+    }
+}
