@@ -16,7 +16,7 @@ A personal portfolio website showcasing my projects and skills.
 Clean, professional design
 Sections for projects, skills, and contact information
 Fully responsive layout
-GitHub Repository: [Portfolio Page](https://himanshuheda.github.io/CodSoft/Calculator/)
+GitHub Repository: [Portfolio Page](https://himanshuheda.github.io/CodSoft/Portfolio/)
 
 **3. Calculator Page**
 A simple, functional calculator built using HTML, CSS, and JavaScript.
